@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Mubarak, Shanzay ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Music (Hidden) -->
+    <audio id="bgMusic" loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="music-control" onclick="toggleMusic()">
+        <span id="musicIcon">🎵</span>
+    </div>
+
+    <!-- Stars & Moon Background -->
+    <div class="night-sky">
+        <div class="moon"></div>
+        <div id="stars"></div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="lantern" id="lantern1">🏮</div>
+            <div class="lantern" id="lantern2">🏮</div>
+            <h1 class="fade-in">Eid Mubarak, My Love <span class="name">Shanzay</span> ❤️</h1>
+            <p class="subtext italic">The moon has been sighted, but my world’s brightest light is you.</p>
+        </section>
+
+        <!-- Typing Message Section -->
+        <section class="message-section glass-card">
+            <h2>To My Dearest Shanzay,</h2>
+            <div id="typing-text"></div>
+        </section>
+
+        <!-- Family Dedication -->
+        <section class="dedication glass-card">
+            <h3>A Special Wish for Your Family</h3>
+            <p>Sending my warmest Eid greetings to the wonderful people who raised someone as amazing as you. May your home be filled with laughter, peace, and the blessings of Allah today and always.</p>
+        </section>
+
+        <!-- Memory Section -->
+        <section class="memories">
+            <h2 class="title">Our Beautiful Moments</h2>
+            <div class="memory-grid">
+                <div class="memory-card">
+                    <div class="placeholder-img">📸</div>
+                    <p>That beautiful smile...</p>
+                </div>
+                <div class="memory-card">
+                    <div class="placeholder-img">🌹</div>
+                    <p>Every moment with you is a gift.</p>
+                </div>
+                <div class="memory-card">
+                    <div class="placeholder-img">✨</div>
+                    <p>To many more Eids together.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Surprise Section -->
+        <section class="surprise-section">
+            <button class="surprise-btn" onclick="showSurprise()">Click for a Surprise 💌</button>
+        </section>
+
+        <footer>
+            <p>Forever Yours, Always.</p>
+            <p class="initials">[Your Name/Initials]</p>
+        </footer>
+    </main>
+
+    <!-- Surprise Overlay -->
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <span class="close-btn" onclick="closeSurprise()">&times;</span>
+            <h2>My Promise to You 💍</h2>
+            <p>On this blessed day, I promise to hold your hand through every moonrise and sunset. You are my greatest blessing. Eid Mubarak, Shanzay!</p>
+            <div class="heart-animation">❤️</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
